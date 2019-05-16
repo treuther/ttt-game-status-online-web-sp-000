@@ -49,12 +49,18 @@ end
 end
 
 def winner(board)
+<<<<<<< HEAD
   position = won?(board)
   if position == nil
     return nil
   elsif board[position[0]] == "X"
     return "X"
   elsif board[position[0]] == "O"
+=======
+  if won?(board) == "X"
+    return "X"
+  elsif won?(board) == "O"
+>>>>>>> b1ae827cc670435a544a4a672e8c3fe34131a1e5
     return "O"
 end
 end
